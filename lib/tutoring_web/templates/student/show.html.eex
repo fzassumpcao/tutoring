@@ -1,0 +1,38 @@
+<h2>Show Student</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @student.name %>
+  </li>
+
+  <li>
+    <strong>Grade:</strong>
+    <%= @student.grade %>
+  </li>
+
+  <li>
+    <strong>Phone:</strong>
+    <%= @student.phone %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @student.email %>
+  </li>
+
+  <li>
+    <strong>Day:</strong>
+    <%= @student.day %>
+  </li>
+
+  <li>
+    <strong>Time:</strong>
+    <%= @student.time %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: student_path(@conn, :edit, @student) %></span>
+<span><%= link "Back", to: student_path(@conn, :index) %></span>
