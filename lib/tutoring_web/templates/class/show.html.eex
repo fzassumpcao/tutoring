@@ -1,0 +1,18 @@
+<h2>Show Class</h2>
+
+<ul>
+
+  <li>
+    <strong>Date:</strong>
+    <%= @class.date %>
+  </li>
+
+  <li>
+    <strong>Student:</strong>
+    <%= @class.student.name %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: class_path(@conn, :edit, @class) %></span>
+<span><%= link "Back", to: class_path(@conn, :index) %></span>

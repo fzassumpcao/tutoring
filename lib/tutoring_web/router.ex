@@ -17,7 +17,10 @@ defmodule TutoringWeb.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-    resources "/students", StudentController
+    resources "/students", StudentController do
+      resources "/classes", ClassController
+    end
+    resources "/classes", ClassController
   end
 
   # Other scopes may use custom stacks.
